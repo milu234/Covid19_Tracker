@@ -1,8 +1,9 @@
 import React from 'react';
-import { Cards , Chart , CountryPicker} from './components';
+import { Cards , Chart , CountryPicker, Footer} from './components';
 import styles from './App.module.css';
 import { fetchdata } from './api';
 import coronaimage from './images/corona.png';
+
 
 class App extends React.Component{
 
@@ -31,9 +32,11 @@ class App extends React.Component{
             <div className = {styles.container} >
                 <img className = { styles.image } src={coronaimage} alt = "COVID-19" />
                 
-                <Cards data = {data}/>
+                
+                <Cards data = {data} country = {country}/>
                 <CountryPicker handleCountryChange = {this.handleCountryChange} />
-                <Chart data ={data} country = {country} />
+                <Chart  data ={data} country = {country} />
+                <Footer />
                 
             </div>
         )

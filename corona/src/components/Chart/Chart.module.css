@@ -2,5 +2,12 @@
     display: flex;
     justify-content: center;
     width: 85%;
+    height: 30%;
     
+}
+
+@media (max-width : 770px) {
+    .container {
+        width:100%;
+    }
 }

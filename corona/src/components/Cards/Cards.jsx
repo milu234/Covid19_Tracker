@@ -6,19 +6,19 @@ import cx from 'classnames';
 
 
 
-const Cards = ( { data : {confirmed , recovered, deaths, lastUpdate}} ) => {
+const Cards = ( { data : {confirmed , recovered, deaths, lastUpdate}, country} ) => {
 
     if(!confirmed){
         return 'Loading.....'
     }
     
 
-    var data1 = confirmed['value'];
-    console.log(typeof data1);
-    var data2 = parseInt(2766611);
-    console.log(typeof data2);
-    var y = data1 - data2;
-    var d = '24/04/2020';
+    // var data1 = confirmed['value'];
+    
+    // var data2 = parseInt(2766611);
+    
+    // var y = data1 - data2;
+    // var d = '24/04/2020';
 
 
     return (
@@ -33,7 +33,7 @@ const Cards = ( { data : {confirmed , recovered, deaths, lastUpdate}} ) => {
                     <CountUp start = {0} end = { confirmed.value } duration = {2.5} separator = "," />
                     </Typography>
                         <Typography color = "textSecondary">{new Date(lastUpdate).toDateString()}</Typography>
-                    <Typography variant = "body2">Number of Active Cases from COVID-19</Typography>
+                    <Typography variant = "body2">Number of Active Cases from COVID-19  {country} </Typography>
                     {/* <Typography color = "textSecondary">Increse in Cases since {d}</Typography>
                     <Typography variant = "body2">{y}</Typography> */}
                     </CardContent>
@@ -44,7 +44,7 @@ const Cards = ( { data : {confirmed , recovered, deaths, lastUpdate}} ) => {
                     <Typography color = "textPrimary" gutterBottom>Recovered</Typography>
                     <Typography variant = "h5"><CountUp start = {0} end = { recovered.value } duration = {2.5} separator = "," /></Typography>
                     <Typography color = "textSecondary">{new Date(lastUpdate).toDateString()}</Typography>
-                    <Typography variant = "body2">Number of Recovered Cases from COVID-19</Typography>
+                    <Typography variant = "body2">Number of Recovered Cases from COVID-19 {country} </Typography>
                     </CardContent>
                 </Grid>
 
@@ -54,7 +54,7 @@ const Cards = ( { data : {confirmed , recovered, deaths, lastUpdate}} ) => {
                     <Typography color = "textPrimary" gutterBottom>Deaths</Typography>
                     <Typography variant = "h5"><CountUp start = {0} end = { deaths.value } duration = {2.5} separator = "," /></Typography>
                     <Typography color = "textSecondary">{new Date(lastUpdate).toDateString()}</Typography>
-                    <Typography variant = "body2">Number of Death Cases from COVID-19</Typography>
+                    <Typography variant = "body2">Number of Death Cases from COVID-19 {country}</Typography>
                     </CardContent>
                 </Grid>
 
