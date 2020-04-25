@@ -19,14 +19,10 @@ const FooterPage = () => {
       </MDBContainer>
       <div className="footer-copyright text-center py-3">
         <MDBContainer fluid>
-          &copy; {new Date().getFullYear()} Copyright: <a href="https://coronatracker-1cf6e.web.app">Coronatracker.com</a>
+          &copy; {new Date().getFullYear()} Copyright: <a href="https://linkedin.com/in/milan-hazra-767759130">Milan Hazra</a>
         </MDBContainer>
       </div>
-      <div className="footer-copyright text-center py-2">
-        <MDBContainer fluid>
-        &nbsp; &nbsp; &nbsp; &nbsp;  Created by: <a href="https://linkedin.com/in/milan-hazra-767759130"><b>Milan Hazra</b></a>
-        </MDBContainer>
-      </div>
+
     </MDBFooter>
   );
 }
