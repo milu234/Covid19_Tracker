@@ -14,7 +14,7 @@ Tech Stack used is  React, Charts.JS and Material UI and deployment is done on f
 
 API Used -  https://covid19.mathdro.id/api
 
---
+---
 
 For installation of project and run
 
