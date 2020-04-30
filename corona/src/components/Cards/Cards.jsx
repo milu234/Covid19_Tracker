@@ -3,13 +3,15 @@ import { Card , CardContent, Typography, Grid } from '@material-ui/core';
 import styles from './Cards.module.css';
 import CountUp from 'react-countup';
 import cx from 'classnames';
+import { BoxLoading } from 'react-loadingg';
+
 
 
 
 const Cards = ( { data : {confirmed , recovered, deaths, lastUpdate}, country} ) => {
 
     if(!confirmed){
-        return 'Loading.....'
+        return 'Loading......3....2........1'
     }
     
 
@@ -30,7 +32,7 @@ const Cards = ( { data : {confirmed , recovered, deaths, lastUpdate}, country} )
                     <CardContent>
                     <Typography color = "textPrimary" gutterBottom><b>Infected</b></Typography>
                     <Typography variant = "h5"> 
-                    <CountUp start = {0} end = { confirmed.value } duration = {2.5} separator = "," />
+                    <CountUp start = {0} end = { confirmed.value } duration = {1} separator = "," />
                     </Typography>
                     <Typography color = "textPrimary">Last Updated at : </Typography>
                     <Typography color = "textSecondary" variant ="body2">{new Date(lastUpdate).toDateString()}</Typography>
@@ -45,7 +47,7 @@ const Cards = ( { data : {confirmed , recovered, deaths, lastUpdate}, country} )
                 <Grid item component = {Card} xs = {12} md = {2} className = {cx(styles.card, styles.recovered)}>
                     <CardContent>
                     <Typography color = "textPrimary" gutterBottom><b>Recovered</b></Typography>
-                    <Typography variant = "h5"><CountUp start = {0} end = { recovered.value } duration = {2.5} separator = "," /></Typography>
+                    <Typography variant = "h5"><CountUp start = {0} end = { recovered.value } duration = {1} separator = "," /></Typography>
                     <Typography color = "textPrimary">Last Updated at : </Typography>
                     <Typography color = "textSecondary" variant ="body2">{new Date(lastUpdate).toDateString()}</Typography>
                     <Typography variant ="body2">{new Date(lastUpdate).toLocaleTimeString()}</Typography>
@@ -58,7 +60,7 @@ const Cards = ( { data : {confirmed , recovered, deaths, lastUpdate}, country} )
                 <Grid item component = {Card} xs = {12} md = {2} className = {cx(styles.card, styles.deaths)}>
                     <CardContent>
                     <Typography color = "textPrimary" gutterBottom><b>Deaths</b></Typography>
-                    <Typography variant = "h5"><CountUp start = {0} end = { deaths.value } duration = {2.5} separator = "," /></Typography>
+                    <Typography variant = "h5"><CountUp start = {0} end = { deaths.value } duration = {1} separator = "," /></Typography>
                     <Typography color = "textPrimary">Last Updated at : </Typography>
                     <Typography color = "textSecondary" variant ="body2">{new Date(lastUpdate).toDateString()}</Typography>
                     <Typography color = "textSecondary" variant ="body2">{new Date(lastUpdate).toLocaleTimeString()}</Typography>
@@ -72,7 +74,7 @@ const Cards = ( { data : {confirmed , recovered, deaths, lastUpdate}, country} )
                 <Grid item component = {Card} xs = {12} md = {2} className = {cx(styles.card, styles.active)}>
                     <CardContent>
                     <Typography color = "textPrimary" gutterBottom><b>Active</b></Typography>
-                    <Typography variant = "h5"><CountUp start = {0} end = { y } duration = {2.5} separator = "," /></Typography>
+                    <Typography variant = "h5"><CountUp start = {0} end = { y } duration = {1} separator = "," /></Typography>
                     <Typography color = "textPrimary">Last Updated at : </Typography>
                     <Typography variant ="body2">{new Date(lastUpdate).toDateString()}</Typography>
                     <Typography variant ="body2">{new Date(lastUpdate).toLocaleTimeString()}</Typography>

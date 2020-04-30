@@ -1,0 +1,12 @@
+.formControl {
+    width: 30%;
+    margin-bottom: 50px !important;
+    border: royalblue !important;
+
+  }
+
+  @media (max-width : 770px) {
+    .formControl {
+        width:100% !important;
+    }
+}

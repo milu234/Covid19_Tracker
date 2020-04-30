@@ -29,6 +29,7 @@ const Chart = ({ data : {confirmed , deaths, recovered}, country }) => {
     const lineChart = (
         dailyData.length ?(
         <Line
+        
             data = {{
                 labels: dailyData.map(({ date }) => date),
                 datasets : [{
@@ -44,7 +45,19 @@ const Chart = ({ data : {confirmed , deaths, recovered}, country }) => {
                     fill : true,
 
                 }],
-            }} />
+            }}
+            
+            width = {550}
+            height = {450}
+
+            options = {{
+                maintainAspectRatio : false
+            }
+
+            }
+            
+            
+            />
         ) : null
     );
 
@@ -79,9 +92,11 @@ const Chart = ({ data : {confirmed , deaths, recovered}, country }) => {
                     }]
 
                 }}
-
+                width  = {550}
+                 height  = {450}   
                 options = {{
-                    legend : { display : false },
+                    maintainAspectRatio : false,
+                    legend : { display : true },
                     title : { display : true, text : `Current Statistics in ${country}` },
                 }}
             />
@@ -91,7 +106,7 @@ const Chart = ({ data : {confirmed , deaths, recovered}, country }) => {
 
 
     return (
-        <div className = {styles.container}>
+        <div className = {styles.container} >
             { country ? barChart :  lineChart }
         </div>
     )
