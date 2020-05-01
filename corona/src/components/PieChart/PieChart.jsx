@@ -1,7 +1,7 @@
 import React,  {useState , useEffect} from 'react';
 import { fetchDailyDataIndia } from '../../api';
 import { Line } from 'react-chartjs-2';
-import styles from './PieChart.module.css';
+// import styles from './PieChart.module.css';
 
 const Chart = ({ data }) => {
 

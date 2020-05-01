@@ -104,7 +104,7 @@ export const fetchStates = async () => {
 }
 
 
-const url1 = 'https://cors-anywhere.herokuapp.com/https://api.covid19india.org/data.json';
+// const url1 = 'https://cors-anywhere.herokuapp.com/https://api.covid19india.org/data.json';
 
 
 // export const fetchdataStatWise = async (state)=> {

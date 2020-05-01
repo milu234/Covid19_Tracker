@@ -5,9 +5,9 @@ import 'mdbreact/dist/css/mdb.css';
 import { Navbar,Footer } from './components';
 import { India,Home } from './components';
 import styles from './App.module.css';
-import { fetchdata } from './api';
+// import { fetchdata } from './api';
 
-import { Route  as Route, Switch } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import { BrowserRouter as Router } from 'react-router-dom';
 
 

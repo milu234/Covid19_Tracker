@@ -6,6 +6,7 @@ import 'mdbreact/dist/css/mdb.css';
 import {  BarChart } from "../components";
 import { PieChart } from '../components';
 import styles from './India.module.css';
+import { Table } from '../components'
 
 // import { container } from '@material-ui/core';
 
@@ -16,10 +17,27 @@ render(){
 
     return (
         <div className = { styles.container }>
-            <hr/>
+            <br></br>
+            <text><b>Daily Statistics Of India</b></text><br></br>
+            <text><i>Click the boxes above the graph for a particular type of case</i></text>
            <PieChart  />
+           <br></br>
            <hr />
+           <br></br>
+           <text><b>StateWise Cases Distribution in India</b></text>
+           <br></br>
+           <br></br>
+         < Table />
+
+         <br></br>
+         <br></br>
+         <hr/>
          
+         <br></br>
+         <text><b>Graphical View Of Cases in India</b></text><br></br>
+         <text><i>Click the boxes above the graph for a particular type of case</i></text>
+         <br></br>
+
             <BarChart  />
     
         </div>

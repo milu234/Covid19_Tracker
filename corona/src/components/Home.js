@@ -34,12 +34,34 @@ class Home extends React.Component {
         
         <div className = { styles.container }>
            <img className = { styles.image } src={coronaimage} alt = "COVID-19" />
+
+           <br>
+             </br>
+         
+
              
-                
+
+           <text><b>Global and Country Wise Cases of Corona Virus</b></text><br>
+             </br>
+             <text><i>(For a Particlar select a  Country from below)</i></text>
+             
+             <br></br>
+             <br></br>
              <Cards data = {data} country = {country}/>
 
              <hr/>
+             
              <CountryPicker handleCountryChange = {this.handleCountryChange} />
+
+
+             <br>
+             </br>
+         
+
+             
+
+           <text><b>Daily Statistics of People Getting Infected</b></text><br>
+             </br>
              
              <Chart className   data ={data} country = {country} />
              

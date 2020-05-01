@@ -8,5 +8,6 @@ export { default as StatePicker } from './StatePicker/StatePicker';
 export { default as BarChart } from './BarChart/BarChart';
 export { default as India } from '../components/India';
 export { default as Home } from '../components/Home';
+export { default as Table } from '../components/Table';
 
  
