@@ -8,26 +8,25 @@ const FooterPage = () => {
       <MDBContainer fluid className="text-center text-md-left">
         <MDBRow>
           <MDBCol md="6">
-            <h5 className="title">Footer Content</h5>
+            <h5 className="title">Covid-19 Tracker</h5>
             <p>
-              Here you can use rows and columns here to organize your footer
-              content.
+            Covid-19 Tracker is a small webapp made for the visualizations of the Global and Country wise cases of Corona Virus and India Specific cases of Corona virus.
             </p>
           </MDBCol>
           <MDBCol md="6">
             <h5 className="title">Links</h5>
             <ul>
               <li className="list-unstyled">
-                <a href="#!">Link 1</a>
+                <a href="https://github.com/milu234/Covid19_Tracker">Source Code</a>
               </li>
               <li className="list-unstyled">
-                <a href="#!">Link 2</a>
+                <a href="https://covid19.mathdro.id/api">Global API</a>
               </li>
               <li className="list-unstyled">
-                <a href="#!">Link 3</a>
+                <a href="https://cors-anywhere.herokuapp.com/https://api.covid19india.org/data.json">State API</a>
               </li>
               <li className="list-unstyled">
-                <a href="#!">Link 4</a>
+                <a href="https://linkedin.com/in/milan-hazra-767759130">LinkedIn</a>
               </li>
             </ul>
           </MDBCol>

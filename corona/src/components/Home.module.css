@@ -20,9 +20,27 @@
     margin-top: 50px;
 }
 
+.container1 {
+    
+    align-items: center;
+    margin: 
+    50px 0px;
+    /* max-width: 1200px; */
+    justify-content: center;
+   
+
+    
+    
+}
+
 
 @media (max-width : 770px) {
     .container {
+        margin: 0 1% !important ;
+        /* width: 100% !important; */
+    }
+
+    .container1 {
         margin: 0 1% !important ;
         /* width: 100% !important; */
     }
